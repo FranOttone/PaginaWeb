@@ -1,0 +1,293 @@
+/* General */
+@import"variables";
+
+*{margin: 0;padding: 0;
+    font-family: 'Roboto', sans-serif;}
+footer{
+    position:relative;
+    bottom: 0px;
+    width: 100%;
+    background-color:$cool-negro ;
+    color: white;
+}
+
+.contenidoPrincipal{
+    display: flex; 
+}
+
+.contenidoPrincipal .caja{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.caja h2{
+    font-size:1.125rem ;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.contenido{
+    margin:20px 0 0 0;
+}
+.redes{
+    margin: 20px 0 0 0;
+}
+.redes a{
+    padding: 0 2px;
+}
+.redes a span i{
+    height: 40px;
+    width: 40px;
+    background-color: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.redes a span i:hover{
+    background: #D4AF37;
+}
+.Centro .contenido .fas{
+    font-size: 1.4375rem;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Centro .contenido .fas:hover{
+    background-color: #D4AF37;
+}
+
+.Centro .contenido .texto{
+    font-weight: 500;
+    font-size: 1.0625rem;
+    padding-left: 10px;
+
+}
+.Centro .contenido .telefono{
+    margin-bottom: 10px 0 ;
+}
+.Derecha form .texto{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+.Derecha form .msg{
+    margin-top: 10px;
+
+}
+.Derecha form input, .Derecha form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background-color: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+    color: white;
+}
+.Derecha form input:focus,
+.Derecha form textarea:focus{
+    outline-color: #3498db;
+    color: white;
+}
+.Derecha form .btn{
+    margin-top: 10px;
+    width: 100%;
+}
+.Derecha form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #D4AF37;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+.Derecha form .btn button:hover{
+    background-color: #222222;
+
+}
+.bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background-color: #151515;
+}
+.bottom center span{
+    color: #656565;
+}
+.bottom center a{
+    color: #D4AF37;
+    text-decoration: none;
+}
+.bottom center a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width:900px){
+    footer{
+        position:relative;
+        bottom: 0px;}
+
+    .contenidoPrincipal{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .contenidoPrincipal .caja{
+        margin: 5px 0;}
+}
+
+    
+/* General */
+/* Index */
+h2{
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+.botonIndex{
+    width: 300px;
+    background-color: #656565;
+    color: white;
+    margin: 50px;
+    border-radius: 10px;
+    border: none;
+    transition: 1s;
+}
+.botonIndex a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    transition: 1s;
+}
+.botonIndex:hover{
+    background-color: #D4AF37;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.botonIndex a:hover{
+    color: black;
+
+}
+
+/*Index*/
+/*Contacto*/
+.btn button{
+    height: 40px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background-color: #D4AF37;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+.btn button:hover{
+    background-color: #222222;
+}
+/*Contacto*/
+/*Padres*/
+#Grilla{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 366px 366px;
+    justify-content: center;
+}
+.contenedorGrilla{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.contenedorGrilla .colorDorado{
+   background-color: rgb(184, 182, 182);
+   padding: 47px 40px 46px;
+   display: flex;
+   justify-content: center;
+   transition: 0.6s;
+}
+.contenedorGrilla .colorDorado:hover{
+    background-color: black;
+    color: #D4AF37;
+}
+
+.contenedorGrilla .colorGris{
+    background-color: #eeebeb;
+    padding: 47px 40px 46px;
+    display: flex;
+    justify-content: center;
+    transition: 0.6s;
+}
+.contenedorGrilla .colorGris:hover{
+    background-color: black;
+    color: #D4AF37;
+}
+
+.divTexto{
+    width: 200px;
+    text-align: center;
+}
+/*Padres*/
+/*Destinos*/
+#GrillaDestinos{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 500px 500px 500px;
+    margin-top: 50px;
+}
+.divPrincipales{
+    background-color: black;
+}
+.divPrincipales h1{
+    color: #D4AF37;
+    font-size: 100px;
+    font-weight: 900px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top:10px;
+}
+.divPrincipales div{
+    background-color: #D4AF37;
+    width: 100%;
+    height: 65%;
+    position:static;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+.divPrincipales p{
+    color:black;
+    font-size: 25px;
+    font-weight: 300px;
+}
+/*Destinos*/
+/*Inscripción*/
+.botonInscripcion{
+    width: 200px;
+    background-color: #D4AF37;
+    border-radius: 10px;
+    color: #222222;
+    border-style: none;
+    transition: 0.3s;
+}
+.botonInscripcion:hover{
+    background-color: #e6e1e1;
+    color: #222222;}
+
+.formulario{
+    padding: 40px;
+   
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
