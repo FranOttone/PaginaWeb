@@ -1,13 +1,17 @@
 /* General */
 @import"variables";
 
+ body{
+     background-image: url(../img/background.jpg);
+     background-position: 0cm;
+ }
 *{margin: 0;padding: 0;
     font-family: 'Roboto', sans-serif;}
 footer{
     position:relative;
     bottom: 0px;
     width: 100%;
-    background-color:$cool-negro ;
+    background-color:$negro ;
     color: white;
 }
 
@@ -25,6 +29,18 @@ footer{
     font-weight: 600;
     text-transform: uppercase;
 
+}
+
+.caja{
+    .Centro{
+        padding-top: 10px;
+    }
+    .Izquierda{
+        padding-top:10px;
+    }
+    .Derecha{
+        padding-top:  10px;;
+    }
 }
 
 .contenido{
@@ -117,19 +133,20 @@ footer{
     background-color: #222222;
 
 }
-.bottom center{
+.bottom div{
     padding: 5px;
     font-size: 0.9375rem;
     background-color: #151515;
+    text-align: center;
 }
-.bottom center span{
+.bottom div span{
     color: #656565;
 }
-.bottom center a{
+.bottom div a{
     color: #D4AF37;
     text-decoration: none;
 }
-.bottom center a:hover{
+.bottom div a:hover{
     text-decoration: underline;
 }
 @media screen and (max-width:900px){
@@ -142,16 +159,19 @@ footer{
         flex-direction: column;
     }
     .contenidoPrincipal .caja{
-        margin: 5px 0;}
-}
+        margin: 5px 0;
+    }
 
-    
-/* General */
-/* Index */
-h2{
-    font-size: 35px;
+}
+/* -----------------General -----------------*
+--------------------------/
+
+/*------------------------- Index--------------------*/
+.h2{
+    font-size: 70px;
     font-weight: 700;
-    margin-top: 25px;
+    color:$dorado;
+    -webkit-text-stroke:2px #151515;
 }
 .botonIndex{
     width: 300px;
@@ -179,8 +199,8 @@ h2{
 
 }
 
-/*Index*/
-/*Contacto*/
+/*-------------------------Index------------------------------*/
+/*---------------------------Contacto-------------------------*/
 .btn button{
     height: 40px;
     width: 100px;
@@ -196,13 +216,13 @@ h2{
 .btn button:hover{
     background-color: #222222;
 }
-/*Contacto*/
-/*Padres*/
+/*------------------------Contacto------------------------*/
+/*------------------------Padres--------------------------*/
 #Grilla{
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     grid-template-rows: 366px 366px;
-    justify-content: center;
+    
 }
 .contenedorGrilla{
     display: flex;
@@ -213,8 +233,10 @@ h2{
    background-color: rgb(184, 182, 182);
    padding: 47px 40px 46px;
    display: flex;
-   justify-content: center;
+   flex-direction: column;
    transition: 0.6s;
+   align-items: center;
+
 }
 .contenedorGrilla .colorDorado:hover{
     background-color: black;
@@ -225,8 +247,9 @@ h2{
     background-color: #eeebeb;
     padding: 47px 40px 46px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     transition: 0.6s;
+    align-items: center;
 }
 .contenedorGrilla .colorGris:hover{
     background-color: black;
@@ -236,42 +259,114 @@ h2{
 .divTexto{
     width: 200px;
     text-align: center;
+    padding: 10px;
 }
-/*Padres*/
-/*Destinos*/
+.img{
+    widows: 70px;;
+    height: 70px;
+    margin: auto;
+    ;}
+/*------------------------Padres---------------------------*/
+/*------------------------Destinos-------------------------*/
 #GrillaDestinos{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 500px 500px 500px;
     margin-top: 50px;
 }
-.divPrincipales{
-    background-color: black;
-}
-.divPrincipales h1{
-    color: #D4AF37;
-    font-size: 100px;
-    font-weight: 900px;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top:10px;
-}
-.divPrincipales div{
-    background-color: #D4AF37;
-    width: 100%;
-    height: 65%;
-    position:static;
-    bottom: 0px;
+
+
+.divDestinos1{
+    height: 500px;
     display: flex;
-    justify-content: center;
+    width: 100%;
+    background-image: url(../img/arboles-silueta.png);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size: contain;
+    background-color:$dorado;
+    
+    span {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-left: 50px;
+        text-align: center;
+        width: 100%;
+        
+    }
+    p{
+        font-size: 20px;
+        width: 100%;
+        color: #eeebeb;
+    }
 }
-.divPrincipales p{
-    color:black;
-    font-size: 25px;
-    font-weight: 300px;
+.divDestinos2{
+    height: 500px;
+    display: flex;
+    width: 100%;
+    background-image: url(../img/Playa.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $dorado;
+    span {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-left: 50px;
+        text-align: center;
+        width: 100%;
+        
+    }
+    p{
+        font-size: 20px;
+        width: 100%;
+        color: #eeebeb;
+    }
 }
-/*Destinos*/
-/*Inscripción*/
+.divDestinos3{
+    height: 500px;
+    display: flex;
+    width: 100%;
+    background-image: url(../img/puntacana.jpg);
+    background-position: bottom 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $dorado;
+    span {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-left: 50px;
+        text-align: center;
+        width: 100%;
+        
+    }
+    p{
+        font-size: 20px;
+        width: 100%;
+        color: #eeebeb;
+    }
+}
+
+.divImg{
+    display: flex;
+    flex-direction: row;
+    
+}
+.imgDestinos{
+    width: 50%;
+    height: 100%;
+   
+
+}
+
+
+
+/*---------------------Destinos---------------------*/
+/*----------------------Inscripción------------------*/
+
 .botonInscripcion{
     width: 200px;
     background-color: #D4AF37;
@@ -291,3 +386,42 @@ h2{
     justify-content: center;
     width: 100%;
 }
+/*---------------------------Inscripción----------------------*/
+/*--------------------------Nosotros------------------*/
+
+
+.fondo{
+    background-image: url(../img/descarga.png);
+    background-repeat: no-repeat;
+    background-size: cover;}
+ 
+.divNosotros{
+    display: flex;
+    height: 480px;
+    width: auto;
+    margin:80px;
+    flex-direction: column;
+    
+}
+    .divNosotros{
+        justify-content: center;
+    span h1{font-size: 60px;
+        color:$negro;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px;
+        margin: auto;
+        -webkit-text-stroke: 1px whitesmoke;
+        p{
+            color:white;
+            font-size: 35px;
+            -webkit-text-stroke: 0cm;
+        }
+    }
+
+    div p{font-size: 18px;
+        color: $dorado;
+        padding: 10px;
+        margin-top: 20px;
+
+    }}
