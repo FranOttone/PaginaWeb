@@ -138,7 +138,7 @@ footer {
 .bottom div a:hover {
   text-decoration: underline; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   footer {
     position: relative;
     bottom: 0px; }
@@ -250,8 +250,7 @@ footer {
 #GrillaDestinos {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 500px 500px 500px;
-  margin-top: 50px; }
+  grid-template-rows: 500px 500px 500px; }
 
 .divDestinos1 {
   height: 500px;
@@ -266,13 +265,13 @@ footer {
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
-    margin-left: 50px;
     text-align: center;
-    width: 100%; }
+    width: 100%;
+    -webkit-text-stroke: 0.5px white; }
   .divDestinos1 p {
     font-size: 20px;
     width: 100%;
-    color: #eeebeb; }
+    color: black; }
 
 .divDestinos2 {
   height: 500px;
@@ -287,13 +286,13 @@ footer {
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
-    margin-left: 50px;
     text-align: center;
-    width: 100%; }
+    width: 100%;
+    -webkit-text-stroke: 0.5px white; }
   .divDestinos2 p {
     font-size: 20px;
     width: 100%;
-    color: #eeebeb; }
+    color: black; }
 
 .divDestinos3 {
   height: 500px;
@@ -308,13 +307,13 @@ footer {
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
-    margin-left: 50px;
     text-align: center;
-    width: 100%; }
+    width: 100%;
+    -webkit-text-stroke: 0.5px white; }
   .divDestinos3 p {
     font-size: 20px;
     width: 100%;
-    color: #eeebeb; }
+    color: black; }
 
 .divImg {
   display: flex;
@@ -371,9 +370,451 @@ footer {
     .divNosotros span h1 p {
       color: white;
       font-size: 35px;
-      -webkit-text-stroke: 0cm; }
+      -webkit-text-stroke: 0px; }
   .divNosotros div p {
     font-size: 18px;
     color: #D4AF37;
     padding: 10px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    -webkit-text-stroke: black 0.5px; }
+
+/*-----------------Nostros---------------------------/*
+    
+    
+    /*----------Responsive------------------*/
+@media only screen and (max-width: 1024px) {
+  /*================================Nosotros===============================*/
+  .divNosotros {
+    display: flex;
+    height: 900px;
+    width: auto;
+    margin: 80px;
+    flex-direction: column; }
+  .divNosotros {
+    justify-content: center; }
+    .divNosotros span h1 {
+      font-size: 60px;
+      color: black;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 10px;
+      margin: auto;
+      -webkit-text-stroke: 1px whitesmoke; }
+      .divNosotros span h1 p {
+        color: white;
+        font-size: 35px;
+        -webkit-text-stroke: 0px; }
+    .divNosotros div p {
+      font-size: 18px;
+      color: #D4AF37;
+      padding: 10px;
+      margin-top: 20px;
+      -webkit-text-stroke: black 0.5px; }
+  /*================================Nosotros===============================*/
+  /*================================Padres===============================*/
+  #Grilla {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 366px 366px 366px; }
+  .contenedorGrilla .colorDorado {
+    background-color: #b8b6b6;
+    padding: 47px 40px 46px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.6s;
+    align-items: center; }
+  .contenedorGrilla .colorGris {
+    background-color: #eeebeb;
+    padding: 47px 40px 46px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.6s;
+    align-items: center; }
+  /*================================Padres===============================*/
+  /*================================Destinos===============================*/
+  #GrillaDestinos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 350px 350px 350px; }
+  .divDestinos1 {
+    height: 350px;
+    display: flex;
+    width: 100%;
+    background-image: url(../img/arboles-silueta.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-color: #D4AF37; }
+    .divDestinos1 span {
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      width: 100%; }
+    .divDestinos1 p {
+      font-size: 20px;
+      width: 100%; }
+  .divDestinos2 {
+    height: 350px;
+    display: flex;
+    width: 100%;
+    background-image: url(../img/Playa.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #D4AF37; }
+    .divDestinos2 span {
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      width: 100%; }
+    .divDestinos2 p {
+      font-size: 20px;
+      width: 100%; }
+  .divDestinos3 {
+    height: 350px;
+    display: flex;
+    width: 100%;
+    background-image: url(../img/puntacana.jpg);
+    background-position: bottom 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #D4AF37; }
+    .divDestinos3 span {
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      width: 100%; }
+    .divDestinos3 p {
+      font-size: 20px;
+      width: 100%; }
+  .imgDestinos {
+    width: 50%;
+    height: 350px; }
+  .divImg {
+    display: flex;
+    flex-direction: row;
+    height: 350px; }
+  /*================================Destinos===============================*/
+  /*================================Contacto===============================*/
+  .contacto {
+    width: 100%; }
+  /*================================Contacto===============================*/ }
+
+@media only screen and (max-width: 768px) {
+  /*================================Destinos===============================*/
+  #GrillaDestinos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 300px 300px; }
+  .divDestinos1 {
+    height: 300px;
+    display: flex;
+    width: 100%;
+    background-image: url(../img/arboles-silueta.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-color: #D4AF37; }
+    .divDestinos1 span {
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      width: 100%; }
+    .divDestinos1 p {
+      font-size: 20px;
+      width: 100%; }
+  .divDestinos2 {
+    height: 300px;
+    display: flex;
+    width: 100%;
+    background-image: url(../img/Playa.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #D4AF37; }
+    .divDestinos2 span {
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      width: 100%; }
+    .divDestinos2 p {
+      font-size: 20px;
+      width: 100%; }
+  .divDestinos3 {
+    height: 300px;
+    display: flex;
+    width: 100%;
+    background-image: url(../img/puntacana.jpg);
+    background-position: bottom 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #D4AF37; }
+    .divDestinos3 span {
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      width: 100%; }
+    .divDestinos3 p {
+      font-size: 20px;
+      width: 100%; }
+  .imgDestinos {
+    width: 50%;
+    height: 300px; }
+  .divImg {
+    display: flex;
+    flex-direction: row;
+    height: 300px; }
+  /*================================Destinos===============================*/
+  /*================================Nosotros===============================*/
+  .divNosotros {
+    display: flex;
+    height: 950px;
+    width: auto;
+    flex-direction: column; }
+  .divNosotros {
+    justify-content: center; }
+    .divNosotros span h1 {
+      font-size: 60px;
+      color: black;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 10px;
+      margin: auto;
+      -webkit-text-stroke: 1px whitesmoke; }
+      .divNosotros span h1 p {
+        color: white;
+        font-size: 35px;
+        -webkit-text-stroke: 0px; }
+    .divNosotros div p {
+      font-size: 18px;
+      color: #ebb70e;
+      padding: 10px;
+      margin-top: 20px; }
+  /*================================Nosotros===============================*/ }
+
+@media screen and (max-width: 576px) {
+  /*================================Destinos===============================*/
+  #GrillaDestinos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 240px 240px 240px; }
+  .divDestinos1 {
+    height: 240px;
+    display: flex;
+    width: 100%;
+    background-image: url(../img/arboles-silueta.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-color: #D4AF37; }
+    .divDestinos1 span {
+      font-size: 35px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      width: 100%; }
+    .divDestinos1 p {
+      font-size: 15px;
+      width: 100%; }
+  .divDestinos2 {
+    height: 240px;
+    display: flex;
+    width: 100%;
+    background-image: url(../img/Playa.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #D4AF37; }
+    .divDestinos2 span {
+      font-size: 35px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      width: 100%; }
+    .divDestinos2 p {
+      font-size: 15px;
+      width: 100%; }
+  .divDestinos3 {
+    height: 240px;
+    display: flex;
+    width: 100%;
+    background-image: url(../img/puntacana.jpg);
+    background-position: bottom 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #D4AF37; }
+    .divDestinos3 span {
+      font-size: 35px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      width: 100%; }
+    .divDestinos3 p {
+      font-size: 15px;
+      width: 100%; }
+  .imgDestinos {
+    width: 50%;
+    height: 240px; }
+  .divImg {
+    display: flex;
+    flex-direction: row;
+    height: 240px; }
+  /*================================Destinos===============================*/
+  /*================================Padres===============================*/
+  #Grilla {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 366px 366px 366px 366px; }
+  .contenedorGrilla .colorDorado {
+    background-color: #b8b6b6;
+    padding: 47px 40px 46px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.6s;
+    align-items: center; }
+  .contenedorGrilla .colorGris {
+    background-color: #eeebeb;
+    padding: 47px 40px 46px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.6s;
+    align-items: center; }
+  /*================================Padres===============================*/
+  /*================================Nosotros===============================*/
+  .divNosotros {
+    display: flex;
+    height: 1300px;
+    width: auto;
+    flex-direction: column; }
+  .divNosotros {
+    justify-content: center; }
+    .divNosotros span h1 {
+      font-size: 55px;
+      color: black;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 10px;
+      margin: auto;
+      -webkit-text-stroke: 1px whitesmoke; }
+      .divNosotros span h1 p {
+        color: white;
+        font-size: 30px;
+        -webkit-text-stroke: 0px; }
+    .divNosotros div p {
+      font-size: 16px;
+      color: #ebb70e;
+      padding: 10px;
+      margin-top: 20px; }
+  /*================================Nosotros===============================*/
+  /*================================Inscripcion===============================*/
+  .formulario {
+    width: 320px; }
+  .secciones {
+    width: 320px; }
+  /*================================Inscripcion===============================*/ }
+
+@media screen and (max-width: 360px) {
+  /*================================Destinos===============================*/
+  #GrillaDestinos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 230px 230px 230px; }
+  .divDestinos1 {
+    height: 230px;
+    display: flex;
+    width: 100%;
+    background-image: url(../img/arboles-silueta.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-color: #D4AF37; }
+    .divDestinos1 span {
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      width: 100%; }
+    .divDestinos1 p {
+      font-size: 12px;
+      width: 100%; }
+  .divDestinos2 {
+    height: 230px;
+    display: flex;
+    width: 100%;
+    background-image: url(../img/Playa.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #D4AF37; }
+    .divDestinos2 span {
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      width: 100%; }
+    .divDestinos2 p {
+      font-size: 12px;
+      width: 100%; }
+  .divDestinos3 {
+    height: 230px;
+    display: flex;
+    width: 100%;
+    background-image: url(../img/puntacana.jpg);
+    background-position: bottom 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #D4AF37; }
+    .divDestinos3 span {
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      width: 100%; }
+    .divDestinos3 p {
+      font-size: 12px;
+      width: 100%; }
+  .imgDestinos {
+    width: 100%;
+    height: 230px; }
+  .divImg {
+    display: flex;
+    flex-direction: row;
+    height: 230px; }
+  .imgDestinos1 {
+    display: none;
+    visibility: hidden; }
+  /*================================Destinos===============================*/
+  /*================================Nosotros===============================*/
+  .hide {
+    display: none; }
+  .divNosotros {
+    display: flex;
+    height: 1300px;
+    width: auto;
+    flex-direction: column; }
+  .divNosotros {
+    justify-content: center; }
+    .divNosotros span h1 {
+      font-size: 50px;
+      color: black;
+      text-align: start;
+      text-transform: uppercase;
+      padding: 0px;
+      margin: 0;
+      -webkit-text-stroke: 1px whitesmoke; }
+      .divNosotros span h1 p {
+        color: white;
+        font-size: 28px;
+        -webkit-text-stroke: 0px; }
+    .divNosotros div p {
+      font-size: 18px;
+      color: #ebb70e;
+      padding: 5px;
+      margin-top: 20px; }
+  /*================================Nosotros===============================*/ }
