@@ -37,89 +37,61 @@
     </nav>
   </header>
   <section>
-    <div class="container formulario ">
-      <form action="Siguiente.html">
-        <div class="form-row secciones">
-          <div class="form-group col-md-4">
-            <select class="form-control">
-              <option selected>Año De Egreso</option>
-              <option>2018</option>
-              <option>2019</option>
-              <option>2020</option>
-              <option>2021</option>
-              <option>2022</option>
-              <option>2023</option>
-              <option>2024</option>
-              <option>2025</option>
-              <option>2026</option>
-              <option>2027</option>
-              <option>2028</option>
-              <option>2029</option>
-              <option>2030</option>
-            </select>
-          </div>
-          <div class="form-group col-md-4">
-            <select class="form-control">
-              <option selected>Seleccionar el mes</option>
-              <option>Julio</option>
-              <option>Agosto</option>
-              <option>Septiembre</option>
-              <option>Octubre</option>
-              <option>Noviembre</option>
-            </select>
-          </div>
-          <div class="form-group col-md-4">
-            <select class="form-control">
-              <option selected>Seleccionar la semana</option>
-              <option>Primera semana</option>
-              <option>Segunda semana</option>
-              <option>Tercera semana</option>
-              <option>Cuarta semana</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row secciones">
-          <div class="form-group col-md-6">
-            <select class="form-control">
-              <option selected>Provincia</option>
-              <option>Bs.As.</option>
-              <option>CABA</option>
-              <option>Córdoba</option>
-              <option>Mendoza</option>
-              <option>La Pampa</option>
-            </select>
-          </div>
-          <div class="form-group col-md-6">
-            <input type="text" class="form-control" placeholder="Zona del colegio">
-          </div>
-        </div>
-        <div class="form-row secciones">
-          <div class="form-group col-md-6">
-            <input type="text" class="form-control" placeholder="Colegio">
-          </div>
-          <div class="form-group col-md-6">
-            <input type="text" class="form-control" placeholder="Cantidad de compañeros">
-          </div>
-        </div>
-        <div class="form-check form-check secciones">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-          <label class="form-check-label" for="inlineRadio1">Bariloche</label>
-        </div>
-        <div class="form-check form-check secciones">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-          <label class="form-check-label" for="inlineRadio2">Cancún</label>
-        </div>
-        <div class="form-check form-check secciones">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-          <label class="form-check-label" for="inlineRadio3">Punta Cana</label>
-        </div>
-        <div class="btn-group secciones" role="group" aria-label="Basic example">
-          <button type="button" class="btn botonInscripcion " disabled>Anterior</button>
-          <button type="submit" class="btn botonInscripcion">Siguiente</button>
-      </form>
+    <div class="container divTusDatos">
+        <h1 class="tusDatos">Tus datos</h1>
+        <form action="Fin.html">
+            <div class="form-row secciones">
+              <div class="form-group col-sm-6">
+                <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+              <div class="form-group col-sm-6">
+                <input type="text" class="form-control" placeholder="Apellido">
+              </div>
+            </div>
+            <div class="form-row secciones">
+                <div class="form-group col-sm-6">
+                  <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="text" class="form-control" placeholder="Teléfono">
+                </div>
+              </div>
+              <div class="form-row secciones">
+                <div class="form-group col-sm-4">
+                  <input type="text" class="form-control" placeholder="DNI o Pasaporte">
+                </div>
+                <div class="form-group col-sm-4">
+                    <input type="date" class="form-control">
+                </div>
+              <div class="form-check form-check secciones">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Masculino</label>
+              </div>
+              <div class="form-check form-check secciones">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Femenino</label>
+              </div>
+              <div class="form-check form-check secciones">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <label class="form-check-label" for="inlineRadio3">Otro</label>
+              </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-sm-6">
+                      <input type="text" class="form-control" placeholder="Localida/Barrio">
+                  </div>
+                  <div class="form-group col-sm-6">
+                      <input type="text" class="form-control" placeholder="Provincia">
+                  </div>
+              </div>
+              <div class="btn">
+                  <button type="submit">Confirmar</button>
+              </div>
+        </form>
+     
     </div>
     </div>
-    <div style="height: 260px;"></div>
+    <div style="height: 300px;"></div>
   </section>
   <footer>
     <div class="contenidoPrincipal">
