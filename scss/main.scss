@@ -435,9 +435,7 @@ footer{
         font-size: 4rem;
         width: 100%;
         padding: 0.625rem;
-    }
-    .divTusDatos{
-        width: 100%;
+        
     }
      /*======================Siguiente==================*/
       /*======================Fin==================*/
@@ -450,6 +448,10 @@ footer{
         font-size:6rem;
         padding:0.625rem;
         color: $dorado;
+        -webkit-text-stroke: #292929 1px;
+    }
+    .height{
+        height: 20.25rem;
     }
        /*======================Fin==================*/
     /*----------Responsive------------------*/
@@ -610,11 +612,27 @@ footer{
     width:100%;
 }
 /*================================Contacto===============================*/
-    }
+.height{
+    height: 9rem;
+}  
+}
 
 
 
 @media only screen and(max-width:48rem){
+ /*================================FIN===========================*/
+ .Fin{
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+.textoFin{
+    font-size:4rem;
+    padding:0.625rem;
+    color: $dorado;
+    -webkit-text-stroke: #292929 1px;
+}
+ /*================================FIN===========================*/
     /*================================Destinos===============================*/
 
     
@@ -780,6 +798,19 @@ footer{
     }
 }
 @media screen and(max-width:36rem){
+    /*==================================FIN==========================*/
+    .Fin{
+        text-align: center;
+        width: 100%;
+        align-items: center;
+    }
+    .textoFin{
+        font-size:3.625rem;
+        padding:0.625rem;
+        color: $dorado;
+        -webkit-text-stroke: #292929 1px;
+    }
+     /*==================================FIN==========================*/
     /*================================Destinos===============================*/
     #GrillaDestinos{
         display: grid;
@@ -937,6 +968,22 @@ footer{
 
 }
 @media screen and(max-width:28.75rem){
+    /*==================================FIN==========================*/
+    .Fin{
+        text-align: center;
+        width: 100%;
+        align-items: center;
+    }
+    .textoFin{
+        font-size:3rem;
+        padding:0.625rem;
+        color: $dorado;
+        -webkit-text-stroke: #292929 1px;
+    }
+    .height{
+        height: 9rem;
+    }
+     /*==================================FIN==========================*/
     .divNosotros{
         display: flex;
         height: 58rem;
@@ -1007,6 +1054,17 @@ footer{
         margin-top: 1.25rem;
     }}
     /*================================Nosotros===============================*/
-.secciones{}
-}
 
+}
+@media screen and(max-width:20.625rem){
+.secciones{
+    width: 20rem;
+    
+}
+.tusDatos{
+    text-align: center;      
+    font-size: rem;
+    width: 100%;
+    padding: 0.625rem;
+}
+}
